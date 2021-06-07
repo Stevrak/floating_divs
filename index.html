@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="format-detection" content="date=no">
+      <meta name="format-detection" content="telephone=no">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1, shrink-to-fit=no, user-scalable=no, width=device-width">
+      <title> Floating Divs </title>
+      <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="manifest" href="../assets/favicons/site.webmanifest">
+  </head>
+  <body>
+
+      <!--  4 containers with static sizes so the page is not deformed when elements are removed -->
+      <div class="holder topleft">
+        <div class="selectable" onclick="div_selector(event)">Div 1</div> <!--  add div_selector(event , additional_function) to make it selectable for swapping-->
+      </div>
+
+      <div class="holder topright">
+        <div class="selectable" onclick="div_selector(event)">Div 2</div>
+      </div>
+
+      <div class="holder bottomleft">
+        <div class="selectable" onclick="div_selector(event)">Div 3</div>
+      </div>
+
+      <div class="holder bottomright">
+        <div class="selectable" onclick="div_selector(event)">Div 4</div>
+      </div>
+
+      <!--  button to perform swap -->
+      <div class="horizontal div1">
+          <div class="vertical">
+            <button class="btn" onclick="swap()">swap</button>
+          </div>
+      </div>
+
+    <script type="application/javascript" src="js/float.js"></script>
+
+  </body>
+</html>
